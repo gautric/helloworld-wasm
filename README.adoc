@@ -19,13 +19,19 @@
     wasiconfigure ./configure
     wasimake make
 
-## Execution (Native or WASI)    
+## Execution
 
-    src/helloworld Marie
+### Native
+
+    HELLOWORLD_ENV=myVal src/helloworld Marie
+
+### WASM
+
+    wasmtime run  --env HELLOWORLD_ENV=myVal  src/helloworld.wasm Marie
 
 ....
 Call 'helloworld' Marie
-HELLOWORLD_ENV = (null) 
+HELLOWORLD_ENV = myVal 
 ret = 42 (helloworld 1.0,<gautric@redhat.com>)
 ....
 
