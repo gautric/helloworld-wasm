@@ -1,4 +1,4 @@
-AC_INIT([helloworld], [1.0], [bug-automake@gnu.org])
+AC_INIT([helloworld], [1.0], [gautric@redhat.com])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_PROG_CC
 #
@@ -11,5 +11,5 @@ AC_CONFIG_FILES([
  src/Makefile
 ])
 AM_PROG_AR
-LT_INIT([shared])
+LT_INIT(shared)
 AC_OUTPUT

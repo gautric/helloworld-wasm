@@ -3,11 +3,14 @@
 
 #include "helloworld.h"
 
-int main() {
-   // int ret = helloworld("Thomas");
-   // printf("ret = %d (from helloworld)\n", ret);
-    helloworld("Thomas");
-    printf("helloworld\n");
-    printf ("(" PACKAGE_STRING ")\n");
+int main(int argc, char* argv[]) {
+    int ret = 0;
+
+    if(argc == 2 ) {
+        helloworld(argv[1]);
+    } else {
+        helloworld("Thomas");    
+    }
+    printf("ret = %d (" PACKAGE_STRING ",<" PACKAGE_BUGREPORT ">)\n", ret);
     return(0);
 }
