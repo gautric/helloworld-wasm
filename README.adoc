@@ -1,26 +1,25 @@
+# Hello World Cross Compilation Native + WASM
 
-Automake Configuration
+## Automake Configuration
 
     autoreconf --install
 
-
-Standard C Compilation
+## Standard C Compilation
 
     ./configure
     make
 
-WASI Env
+## WASI Env
 
     pip install wasienv --upgrade
     wasienv install-sdk unstable
 
-WASI Compilation
+## WASI Compilation
 
     wasiconfigure ./configure
     wasimake make
 
-
-Execution (Native or WASI)    
+## Execution (Native or WASI)    
 
     src/helloworld Marie
 
@@ -30,5 +29,7 @@ HELLOWORLD_ENV = (null)
 ret = 42 (helloworld 1.0,<gautric@redhat.com>)
 ....
 
+## Links
 
+* https://medium.com/wasmer/wasienv-wasi-development-workflow-for-humans-1811d9a50345
 

@@ -4,7 +4,7 @@ AC_PROG_CC
 #
 AC_CONFIG_MACRO_DIRS([m4])
 AC_CONFIG_HEADERS([config.h])
-#ACLOCAL_AMFLAGS([-I m4])
+ACLOCAL_AMFLAGS([-I m4])
 AC_CONFIG_FILES([
  Makefile
  lib/Makefile
