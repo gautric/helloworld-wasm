@@ -1,11 +1,6 @@
 
 #include "helloworld.h"
 
-
-#ifdef __EMSCRIPTEN__
-    #include <emscripten.h>
-#endif
-
 #ifdef __cplusplus
     extern "C" {
 #endif

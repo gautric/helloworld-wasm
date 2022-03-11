@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#ifdef __EMSCRIPTEN__
+    #include <emscripten.h>
+#endif
 
 #ifndef helloWorld_h__
 #define helloWorld_h__
