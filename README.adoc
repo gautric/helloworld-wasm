@@ -1,0 +1,34 @@
+
+Automake Configuration
+
+    autoreconf --install
+
+
+Standard C Compilation
+
+    ./configure
+    make
+
+WASI Env
+
+    pip install wasienv --upgrade
+    wasienv install-sdk unstable
+
+WASI Compilation
+
+    wasiconfigure ./configure
+    wasimake make
+
+
+Execution (Native or WASI)    
+
+    src/helloworld Marie
+
+....
+Call 'helloworld' Marie2 
+HELLOWORLD_ENV = (null) 
+ret = 42 (helloworld 1.0,<gautric@redhat.com>)
+....
+
+
+
