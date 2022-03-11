@@ -24,7 +24,7 @@
     src/helloworld Marie
 
 ....
-Call 'helloworld' Marie2 
+Call 'helloworld' Marie
 HELLOWORLD_ENV = (null) 
 ret = 42 (helloworld 1.0,<gautric@redhat.com>)
 ....
