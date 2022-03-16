@@ -1,3 +1,3 @@
-lib_LIBRARIES = libhelloworld.a
-libhelloworld_a_SOURCES = helloworld.c 
+lib_LTLIBRARIES = libhelloworld.la
 include_HEADERS = helloworld.h
+libhelloworld_la_SOURCES = helloworld.c 
